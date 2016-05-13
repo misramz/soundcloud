@@ -14,6 +14,7 @@ var songs = $('.songs');
 form.on('submit', function(event){
   event.preventDefault();
   var search = $('#search').val();
+  songs.empty();
    $.getJSON(url +'tracks?client_id=' +token +'&q='+ search).then(function(res){
     //console.log(res);
 
