@@ -14,7 +14,6 @@ var songs = $('.songs');
 form.on('submit', function(event){
   event.preventDefault();
   var search = $('#search').val();
-   //console.log(search);
    $.getJSON(url +'tracks?client_id=' +token +'&q='+ search).then(function(res){
     //console.log(res);
 
@@ -34,15 +33,22 @@ songs.on('click', 'li', function(event) {
 
 });
 function trackTemplate(track){
-  // var single = ${track.stream_url};
-  //console.log('tracktemplate',track.stream_url);
-
-
+if(track.artwork_url !==null){
   return`
   <li> <img src="${track.artwork_url}">
         ${track.title}
         <span>${track.stream_url}</span>
   </li>
   `;
+}else{
+  return`
+  <li> <img src="http://placehold.it/100x100">
+        ${track.title}
+        <span>${track.stream_url}</span>
+  </li>
+  `;
+}
+
+
 
 }

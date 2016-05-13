@@ -31,9 +31,19 @@ span {
 }
 
 li {
+  display: inline-block;
+  border:1px solid black;
   list-style: none;
   float: left;
-  margin: 50px 50px;
-  width: 80px;
+  margin: 10px 10px;
+  width: 250px;
+  height: 250px;
+  text-overflow: ellipsis;
 
+}
+
+img {
+  width: 250px;
+  height: 150px;
+  margin-bottom: 10px;
 }
