@@ -1,0 +1,39 @@
+
+body {
+  background-color: pink;
+  text-align: center;
+}
+
+
+.title {
+  color: white;
+  font-size: 100px;
+}
+
+.container {
+  border: 5px solid lightgreen;
+}
+
+input {
+  height: 50px;
+  width: 300px;
+}
+
+button {
+  height: 50px;
+  font-style: italic;;
+}
+
+
+
+span {
+  display:none;
+}
+
+li {
+  list-style: none;
+  float: left;
+  margin: 50px 50px;
+  width: 80px;
+
+}
